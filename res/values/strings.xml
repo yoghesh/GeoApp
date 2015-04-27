@@ -4,5 +4,11 @@
     <string name="app_name">GeoTracker</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-
+	<string-array name = "planets">
+    <item >New</item>
+    <item >Events</item>
+    <item >SOS</item>
+    <item >Accounts</item>
+    <item>Friends</item>
+	</string-array>
 </resources>

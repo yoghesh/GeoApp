@@ -2,6 +2,7 @@ package com.example.flareon;
 
 import java.sql.Date;
 import java.sql.Time;
+import java.util.List;
 
 import android.R.integer;
 
@@ -11,11 +12,12 @@ public class eventData {
 	private String m_name;
 	private String m_location;
 	private String m_position;
-	private Date m_date;
-	private Time m_time;
+	private String m_date;
+	private String m_time;
 	private Integer m_ServerID;
+	private List<String> mFriends;
 	
-	public eventData(Integer eid, String name, String location, String position, Date date, Time time, Integer serverId)
+	public eventData(Integer eid, String name, String location, String position, String date, String time, Integer serverId, List<String>Friends)
 	{
 		m_eid = eid;
 		m_name = name;
@@ -24,8 +26,9 @@ public class eventData {
 		m_date = date;
 		m_time = time;
 		m_ServerID = serverId;
+		mFriends = Friends;
 	}
-	
+
 	public Integer getEid()
 	{return m_eid;}
 	
@@ -38,14 +41,17 @@ public class eventData {
 	public String getPosition()
 	{return m_position;}
 	
-	public Date getDate()
+	public String getDate()
 	{return m_date;}
 	
-	public Time getTime()
+	public String getTime()
 	{return m_time;}
 	
 	public Integer getServerId()
 	{return m_ServerID;}
+	
+	public List<String> getFriends()
+	{return mFriends;}
 	
 	public void setEid(Integer val)
 	{ m_eid = val;}
@@ -59,12 +65,15 @@ public class eventData {
 	public void setPosition(String val)
 	{ m_position = val;}
 	
-	public void setDate(Date val)
+	public void setDate(String val)
 	{ m_date = val;}
 	
-	public void setTime(Time val)
+	public void setTime(String val)
 	{m_time = val;}
 	
 	public void setServerId(Integer val)
 	{ m_ServerID = val;}
+	
+	public void setFriends(List<String> Friends)
+	{mFriends = Friends;}
 }

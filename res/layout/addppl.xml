@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+      android:minHeight="400dp"
+    android:minWidth="300dp"
+    android:weightSum="100">
+
+<LinearLayout
+    android:layout_width="match_parent"
+	android:layout_height="match_parent" 
+    android:layout_weight="90" >
+
+        <ListView
+            android:id="@+id/lstpplAddppl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+        </ListView>
+</LinearLayout>
+<!-- 
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:layout_weight="10"
+     android:weightSum="100">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_weight="25"   
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/txtPplname"
+        android:layout_width="match_parent"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_weight="25" 
+        android:layout_height="wrap_content"   
+        android:ems="10" >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btnPpladd"
+        android:layout_width="match_parent"
+        android:paddingTop="5dp"
+        android:layout_weight="25" 
+        android:paddingBottom="5dp"
+        android:layout_height="wrap_content"
+        android:text="Add" />
+		
+    <Button
+        android:id="@+id/btnPplOK"
+        android:paddingTop="5dp"
+        android:paddingBottom="25dp"
+        android:layout_weight="25" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK" />
+    </LinearLayout>
+     -->
+</LinearLayout>

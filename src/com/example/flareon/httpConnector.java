@@ -48,10 +48,18 @@ public class httpConnector extends AsyncTask<JSONObject, Void, JSONArray > {
         JSONObject myIN = params[0];
         List<NameValuePair> mData = new ArrayList<NameValuePair>();
         try {
-			mData.add(new BasicNameValuePair("username", (String) myIN.get("username")));
-			mData.add(new BasicNameValuePair("mailid", (String) myIN.get("mailid")));
-			mData.add(new BasicNameValuePair("password", (String) myIN.get("password")));
-			mData.add(new BasicNameValuePair("type", (String) myIN.get("type").toString()));
+        	if(myIN.has("username"))
+			{mData.add(new BasicNameValuePair("username", (String) myIN.get("username")));}
+        	if(myIN.has("mailid"))
+			{mData.add(new BasicNameValuePair("mailid", (String) myIN.get("mailid")));}
+        	if(myIN.has("password"))
+			{mData.add(new BasicNameValuePair("password", (String) myIN.get("password")));}
+        	if(myIN.has("type"))
+			{mData.add(new BasicNameValuePair("type", (String) myIN.get("type").toString()));}
+        	if(myIN.has("appkey"))
+			{mData.add(new BasicNameValuePair("appkey", (String) myIN.get("appkey").toString()));}
+        	if(myIN.has("authkey"))
+        	{mData.add(new BasicNameValuePair("authkey", (String) myIN.get("authkey").toString()));}
 		} catch (JSONException e2) {
 			// TODO Auto-generated catch block
 			e2.printStackTrace();
